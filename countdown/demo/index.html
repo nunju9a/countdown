@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Justice's Non-Vegan Countdown</title>
+	<link type="text/css" href="demo.css?v=1.0.0" rel="stylesheet">
+	<link type="text/css" href="../jquery.countdown.css?v=1.0.0" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.countdown.min.js?v=1.0.0"></script>
+</head>
+<body>
+	<ul id="example">
+		<li><span class="days">00</span><p class="days_text">Days</p></li>
+		<li class="seperator">:</li>
+		<li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+		<li class="seperator">:</li>
+		<li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+		<li class="seperator">:</li>
+		<li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+	</ul>
+
+	<script class="source" type="text/javascript">
+		var now = new Date();
+		var day = 05;
+		var month = 06;
+		var year = 2020;
+
+		var nextyear = month + '/' + day + '/' + year + ' 08:00:00';
+
+		$('#example').countdown({
+			date: nextyear, // TODO Date format: 07/27/2017 17:00:00
+			offset: +2, // TODO Your Timezone Offset
+			day: 'Day',
+			days: 'Days'
+		}, function () {
+			alert('Done!');
+		});
+	</script>
+
+	<ul id="buttons">
+		
+	</ul>
+</body>
+</html>
