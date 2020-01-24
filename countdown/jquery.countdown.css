@@ -8,17 +8,30 @@ ul#example {
 ul#example li {
 	display: inline-block;
 }
-ul#example li span {
-	font-size: 120px;
-	font-weight: 300;
-	line-height: 80px;
-}
-ul#example li.seperator {
-	font-size: 80px;
-	line-height: 70px;
-	vertical-align: top;
-}
-ul#example li p {
-	color: white;
-	font-size: 50px;
+    ul#example li span {
+        font-size: 120px;
+        font-weight: 300;
+        line-height: 80px;
+        font-weight: bold;
+    }
+    ul#example li.seperator {
+        font-size: 100px;
+        line-height: 70px;
+        vertical-align: top;
+        font-weight: bold;
+
+    }
+    ul#example li p {
+        color: white;
+        font-size: 50px;
+        background-color: black;
+    }
+
+.justice {
+    font-size: 50px;
+    line-height: 70px;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
 }
